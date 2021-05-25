@@ -10,6 +10,5 @@ members = [
     "code/showcase/*",
 ]
 exclude = [
-    "code/showcase/imgui-demo",
     "code/showcase/pong",
 ]

@@ -14,7 +14,7 @@ Since I needed to make a bunch of changes to the code base to make the glsl, and
 
 ### Some of the showcase examples are broken
 
-The `wgpu_glyph`, and `imgui-wgpu` crates currently depend on `wgpu` 0.7, which is causing the `pong` and `imgui-demo` to not compile. I decided to excluded them from the workspace until the underlying crates update to using `wgpu` 0.8. (Feel free to submit a issue or even PR when that happens!)
+The `wgpu_glyph`, and `imgui-wgpu` crates currently depend on `wgpu` 0.7, which is causing the `pong` to not compile. I decided to excluded it from the workspace until the underlying crates update to using `wgpu` 0.8. (Feel free to submit a issue or even PR when that happens!)
 
 ### Various API changes
 
