@@ -38,6 +38,12 @@ dependencies = [
 [[package]]
 name = "alignment"
 version = "0.1.0"
+dependencies = [
+ "crevice",
+ "crevice-derive",
+ "mint",
+ "type-layout",
+]
 
 [[package]]
 name = "andrew"
@@ -415,6 +421,26 @@ dependencies = [
 ]
 
 [[package]]
+name = "crevice"
+version = "0.6.0"
+source = "git+https://github.com/LPGhatguy/crevice?rev=c81234662e5118d115922e89d0f0f6fbc9ac560f#c81234662e5118d115922e89d0f0f6fbc9ac560f"
+dependencies = [
+ "bytemuck",
+ "crevice-derive",
+ "mint",
+]
+
+[[package]]
+name = "crevice-derive"
+version = "0.6.0"
+source = "git+https://github.com/LPGhatguy/crevice?rev=c81234662e5118d115922e89d0f0f6fbc9ac560f#c81234662e5118d115922e89d0f0f6fbc9ac560f"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "crossbeam-channel"
 version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -444,7 +470,7 @@ dependencies = [
  "cfg-if 1.0.0",
  "crossbeam-utils",
  "lazy_static",
- "memoffset",
+ "memoffset 0.6.3",
  "scopeguard",
 ]
 
@@ -1299,6 +1325,15 @@ dependencies = [
 
 [[package]]
 name = "memoffset"
+version = "0.5.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "043175f069eda7b85febe4a74abbaeff828d9f8b448515d3151a14a3542811aa"
+dependencies = [
+ "autocfg",
+]
+
+[[package]]
+name = "memoffset"
 version = "0.6.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f83fb6581e8ed1f85fd45c116db8405483899489e38406156c25eb743554361d"
@@ -1338,6 +1373,12 @@ dependencies = [
  "adler",
  "autocfg",
 ]
+
+[[package]]
+name = "mint"
+version = "0.5.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "519df8d6856dcd4b40519947737b408f81be051fc032590659cae5d77d664185"
 
 [[package]]
 name = "mio"
@@ -2360,6 +2401,27 @@ dependencies = [
  "tobj",
  "wgpu",
  "winit",
+]
+
+[[package]]
+name = "type-layout"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "074069282ba5be5078f1bdb34112b963516d50f262bf4c1082fee1f6ada11d74"
+dependencies = [
+ "memoffset 0.5.6",
+ "type-layout-derive",
+]
+
+[[package]]
+name = "type-layout-derive"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fc4a1cf66ce820973c4b31c5ef47a8e930a53ffbcec191212c33f5a3ad75c6cd"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
 ]
 
 [[package]]

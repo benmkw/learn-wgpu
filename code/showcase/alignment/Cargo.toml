@@ -5,4 +5,7 @@ authors = ["Benedikt Mandelkow <benedikt.mandelkow@rwth-aachen.de>"]
 edition = "2018"
 
 [dependencies]
-# TODO when crevice gets support for deriving Std430/ Std140 use those in the examples as well
+crevice = { git = "https://github.com/LPGhatguy/crevice", rev = "c81234662e5118d115922e89d0f0f6fbc9ac560f" }
+crevice-derive = { git = "https://github.com/LPGhatguy/crevice", rev = "c81234662e5118d115922e89d0f0f6fbc9ac560f", features =["test_type_layout"] }
+mint = "0.5"
+type-layout = "*"
